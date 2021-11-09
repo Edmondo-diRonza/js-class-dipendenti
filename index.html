@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <title>Azienda JS class</title>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <h1>Gestione Azienda</h1>
+            <section class="output-dipendenti">
+                <h2>Lista DIPENDENTI e rispettivi salari mensili - 2020</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>            
+                            <th>Cognome</th>       
+                            <th>Gennaio</th>
+                            <th>Febbraio</th>
+                            <th>Marzo</th>
+                            <th>Aprile</th>
+                            <th>Maggio</th>
+                            <th>Giugno</th>
+                            <th>Luglio</th>
+                            <th>Agosto</th>            
+                            <th>Settembre</th>            
+                            <th>Ottobre</th>            
+                            <th>Novembre</th>            
+                            <th>Dicembre</th>
+                            <th>TOTALE ANNO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabella-dipendenti">    
+                    </tbody>   
+                </table>
+            </section>
+            <section class="output-clienti">
+                <h2>Lista CLIENTI e rispettivi acquisti mensili - 2020</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>            
+                            <th>Cognome</th>       
+                            <th>Gennaio</th>
+                            <th>Febbraio</th>
+                            <th>Marzo</th>
+                            <th>Aprile</th>
+                            <th>Maggio</th>
+                            <th>Giugno</th>
+                            <th>Luglio</th>
+                            <th>Agosto</th>            
+                            <th>Settembre</th>            
+                            <th>Ottobre</th>            
+                            <th>Novembre</th>            
+                            <th>Dicembre</th>
+                            <th>TOTALE ANNO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabella-clienti">    
+                    </tbody>   
+                </table>
+            </section>
+            <div class="buttons">
+                <button id="calcola-guadagno"> Mostra Guadagno</button>
+            </div> 
+            <section id="output-guadagni" class="hidden">
+                <div class="flex-wrapper">
+                    <div class="left">
+                        <div class="upper-title">TOTALE SPESE DIPENDENTI ANNO 2020</div>
+                        <div class="lower-div">€ <span id="spese-dipendenti"></span></div>
+                    </div>
+                    <div class="right">
+                            <div class="upper-title">TOTALE RICAVI ANNO 2020</div>
+                            <div class="lower-div">€ <span id="ricavi-committenti"></span></div>
+                    </div>
+                </div>
+                <hr>                
+                <div class="saldo">
+                    <div>Saldo: € <span id="saldo-2020"></span></div>
+                </div>               
+            </section>           
+        </div>        
+        <script src="js/script.js"></script> 
+    </body>
+</html>
